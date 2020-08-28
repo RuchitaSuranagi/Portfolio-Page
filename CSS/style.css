@@ -1,0 +1,312 @@
+
+
+html, body{
+	margin: 0; 
+	box-sizing: border-box;
+	width:100%;
+	height:100%;
+}
+
+/* CSS varibales*/
+:root{
+	--primary-col: #00b1bb;
+	--primary-col1: #80BEAF; /*Qua blue2*/
+    --primary-col2: #B3DDD1; /*qua blue3*/
+    --primary-col5: #EE9C6A; /*pastel oranage1*/
+    --gradient-color: linear-gradient(#80BEAF 0%, #00b1bb 100%);
+    --box-shadow: 0px 10px 30px #f2f2f3;
+    /* font family variables. */ 
+    --roboto: 'Roboto',cursive, sans-serif;
+}
+
+
+/*R logo*/
+#R_Logo{
+	width: 20%;
+	height: auto;
+	max-width: 720px;
+	min-width: 60px;
+}
+
+/* Navigation */
+.header_area .main-menu .navbar .navbar-brand{
+	padding: 0 2rem 0 5rem;
+}
+
+.header_area .main-menu .navbar{
+	padding: 1rem 10rem 1rem;
+}
+
+.header_area .main-menu .nav-item .nav-link{
+	font: normal 500 16px/14px var(--roboto);
+	text-transform: uppercase;
+	padding: 1.7rem;
+	color: #0a0909;
+}
+
+.header_area .main-menu .navbar-nav .active a{
+	background: var(--gradient-color);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav .nav-item a:hover{
+	background: linear-gradient(#B3DDD1 0%, #80BEAF 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+
+/*banner-area*/
+.site-title-text{
+	text-align: center;
+}
+
+.site-main .site-banner .site-title h2{
+    padding-top: 25%;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.site-main .site-banner .site-title h1{
+	font: normal 600 40px/ 25px var(--roboto);
+    font-size: 2.6rem;
+    text-transform: uppercase;
+}
+
+.site-main .site-banner .site-title h5{
+    font-size: 1rem;
+}
+
+.site-title-text{
+    line-height: 40px;
+    font-family: var(--roboto);
+}
+
+.site-main .site-banner .profile-image img{
+    padding: 2rem 0;
+    width: 90rem;
+}
+
+/*Button*/
+.social i{
+	font-size:22px;
+	padding: 1.9rem 0.8rem;
+	color: black;
+}
+
+button{
+    padding: 1rem 1.5rem 10rem;
+    font: normal 500 16px/25px var(--roboto);
+    position: relative;
+    text-align: center;
+    border: 3px solid transparent;
+    border-radius: 4px;
+    width: 50%;
+}
+
+.btn-primary-button, .btn-secondary-button{
+    background: var(--gradient-color);
+    color: white;
+    border-radius: 30px;
+    background-clip: padding-box;
+    transition: background .6s ease;
+    box-shadow: var(--box-shadow);
+}
+
+.btn-primary-button:hover,.btn-secondary-button:hover {
+    background: whitesmoke;
+    color: var(--primary-col5);
+    background-clip: padding-box;
+}
+
+.site-main .site-banner .social-icons{
+	border:1px solid transparent;
+	text-align: center;
+	list-style: none;
+	display: inline-table;
+	width: 100%;
+	margin: 0px 25px 0px 25px;
+}
+
+.site-banner .site-title a{
+	color: white;
+}
+.site-banner .site-title a:hover{
+	background: whitesmoke;
+    color: var(--primary-col5);
+    background-clip: padding-box;
+}
+
+
+/*Aboout me*/
+.site-main .about-area{
+	padding: 2rem 2rem;
+}
+
+.about-me-text{
+	display: block;
+	padding-top: 15%;
+	text-transform: uppercase;
+	font: normal 700 40px/35px var(--roboto);
+	letter-spacing: 10px;
+}
+
+.para p{
+	padding: .5rem 0;
+	font-family: var(--roboto);
+}
+
+
+/*Services*/
+.site-main .services-area{
+    padding: 2rem 2rem 5rem;
+}
+
+.services-img img{
+	padding: 10px;
+	height: auto;
+	max-width: 200px;
+	min-width: 20px;
+	text-align: center;
+}
+
+.tittle-text{
+	display: block;
+	padding-top: 2%;
+	text-transform: uppercase;
+	font: normal 700 38px/32px var(--roboto);
+	letter-spacing: 6px;
+}
+
+.services-title div[class$=lg]{
+	padding: 0 14rem;
+}
+
+.services:hover{
+	box-shadow: var(--box-shadow);
+}
+
+/*Portfolio*/
+.project-area{
+	background-color: var(--primary-col);
+	padding: 2rem 0;
+}
+
+.project-title{
+	text-align: center;
+	display: absolute;
+	text-transform: uppercase;
+	font: normal 700 40px/35px var(--roboto);
+	letter-spacing: 18px;
+}
+
+.element-item {
+	text-align: center;
+	display: inline-table;
+
+}
+
+.row-grid{
+	margin: auto;
+	max-width: 1000px;
+	overflow:auto;
+}
+
+.img-item img{
+	width: 100%;
+	height: auto;
+	padding: 0.5px 0.5px;
+
+}
+/* WORK */
+
+.work-area{
+	padding: 100px 0; 
+	background-color: #87c1bfa1;
+}
+
+.work-quote p{
+	font-size: 69px;
+	font-weight: bolder;
+	line-height: 50px;
+}
+
+#counter-box{
+	padding: 80px;
+}
+
+.count-number p{
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/*CONTACT*/
+.contact-area{
+	background:url("../Images/Mandala.png") no-repeat;
+}
+.contact-area .say-hello{
+	text-align: center;
+	font-weight: bold;
+	display: block;
+	padding-top: 20px;
+	text-transform: uppercase;
+	font: normal 700 50px/35px var(--roboto);
+	letter-spacing: 8px;
+}
+
+.cont-form{
+	text-align: center;
+	margin: auto;
+	padding-bottom: 30px;
+	background-color: rgba(0,0,0,0.2); 
+	width: 400px; 
+	padding: 15px;
+	border-radius: 5px;
+	box-shadow: 0 30px 30px rgba(0,0,0,.5);
+}
+
+::placeholder {
+  color: white;
+}
+
+#name, #email, #comment{
+	width: 350px;
+	height: 40px;
+	margin: 5px;
+	border: 0px;
+	padding: 10px;
+	color: white;
+	background-color: rgba(0,0,0,0.6);
+}
+
+#comment{
+	height: 200px;
+	width: 350px;
+}
+
+.btn-submit{
+	text-align: center;
+	width: 250px;
+	height: 35px;
+	border-radius: 30px;
+	background-color: var(--primary-col);
+	color: white;
+}
+
+/*Footer*/
+.footer-area{
+    padding: 5rem 0;
+ }
+.social2 i{
+    font-size:22px;
+    padding: 0.5rem;
+    color: var(--primary-col);
+ }
+
+ .social2 i:hover{
+    color: var(--primary-col2);
+ }
